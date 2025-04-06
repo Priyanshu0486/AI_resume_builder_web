@@ -52,10 +52,11 @@ function AddResume() {
     <div >
         <div className='p-14 py-24 border 
         items-center flex 
-        justify-center bg-secondary
+        justify-center bg-gradient-to-r from-blue-200 to-purple-200
         rounded-lg h-[280px]
-        hover:scale-105 transition-all hover:shadow-md
-        cursor-pointer border-dashed'
+        hover:scale-105 transition-all hover:shadow-lg
+        cursor-pointer border-dashed border-2 border-blue-300
+        group relative overflow-hidden text-gray-700'
         onClick={()=>setOpenDialog(true)}
         >
             <PlusSquare  />

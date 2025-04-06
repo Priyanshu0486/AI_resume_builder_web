@@ -46,17 +46,18 @@ function ViewResume() {
           title: resumeInfo?.firstName+" "+resumeInfo?.lastName+" resume",
         }}
         onClick={() => console.log("shared successfully!")}
-      > <Button>Share</Button>
+      >
+        <Button>Share</Button>
       </RWebShare>
             </div>
         </div>
             
         </div>
         <div className='my-10 mx-10 md:mx-20 lg:mx-36'>
-        <div id="print-area" >
+            <div id="print-area" >
                 <ResumePreview/>
             </div>
-            </div>
+        </div>
     </ResumeInfoContext.Provider>
   )
 }

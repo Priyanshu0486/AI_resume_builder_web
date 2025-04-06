@@ -25,7 +25,7 @@ function Experience() {
     const [loading,setLoading]=useState(false);
 
     useEffect(()=>{
-        resumeInfo?.Experience.length>0&&setExperinceList(resumeInfo?.Experience)
+        resumeInfo?.experience?.length>0&&setExperinceList(resumeInfo?.experience)
         
     },[])
 
@@ -64,7 +64,7 @@ function Experience() {
     useEffect(()=>{
         setResumeInfo({
             ...resumeInfo,
-            Experience:experinceList
+            experience:experinceList
         });
      
     },[experinceList]);
@@ -74,7 +74,7 @@ function Experience() {
         setLoading(true)
         const data={
             data:{
-                Experience:experinceList.map(({ id, ...rest }) => rest)
+                experience:experinceList?.map(({ id, ...rest }) => rest)
             }
         }
 
@@ -95,7 +95,7 @@ function Experience() {
         <h2 className='font-bold text-lg'>Professional Experience</h2>
         <p>Add Your previous Job experience</p>
         <div>
-            {experinceList.map((item,index)=>(
+            {experinceList?.map((item,index)=>(
                 <div key={index}>
                     <div className='grid grid-cols-2 gap-3 border p-3 my-5 rounded-lg'>
                         <div>

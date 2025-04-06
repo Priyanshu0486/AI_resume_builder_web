@@ -1,7 +1,8 @@
 import React from 'react'
-import { Button } from '../ui/button'
+
 import { Link } from 'react-router-dom'
 import { UserButton, useUser } from '@clerk/clerk-react'
+import { Button } from '../ui/button';
 
 function Header() {
     const { user, isSignedIn } = useUser();
@@ -13,7 +14,12 @@ function Header() {
             {isSignedIn ?
                 <div className='flex gap-2 items-center'>
                     <Link to={'/dashboard'}>
-                        <Button variant="outline">Dashboard</Button>
+                        <Button 
+                          variant="outline" 
+                          className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white hover:from-indigo-600 hover:to-purple-500 border-none transition-all duration-300 font-medium rounded-md px-4 py-2 shadow-sm hover:shadow-lg"
+                        >
+                          Dashboard
+                        </Button>
                     </Link>
                     <UserButton />
                 </div> :
