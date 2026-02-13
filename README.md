@@ -102,11 +102,3 @@ User previews and exports the final resume
 ☁️ Cloud resume saving
 
 📊 ATS Score Checker
-
-Fork the repo
-
-Create a new branch
-
-Commit your changes
-
-Submit a Pull Request
